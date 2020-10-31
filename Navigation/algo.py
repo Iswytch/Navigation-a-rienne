@@ -22,7 +22,6 @@ def calculDistanceLoxo(latPt, longPt, latPtArrive, longPtArrive):
 
 def calculCap(latM, longM, latN, longN, distance, estOuOuest):
     V=(sin(latN)-sin(latM)*cos(distance))/(cos(latM)*sin(distance))
-    print("V = ",V)
     if estOuOuest=="e":
         return acos(V)
     else:
@@ -96,10 +95,13 @@ latPtSuivant=latNextPoint(latPt, longPt, cap, l)
 
 
 
+check=True
 
-
-#while longPt>longPtArrive:
-while latPt!=latPtArrive and longPt!=longPtArrive and i<70:
+while check:
+    
+     if (round(latPt,1)==round(latPtArrive,1) and round(longPt,1)==round(longPtArrive,1)):
+        check=False
+        
     
      listeLat.append(512.5-((512.5*radiantToDegre(latPt))/90))
      listeLong.append(1024+((1024*radiantToDegre(longPt))/180))
@@ -119,16 +121,17 @@ while latPt!=latPtArrive and longPt!=longPtArrive and i<70:
     
 
     
-     i = i + 1;
     
      # DEBUG
-     print("longPt = ",longPt)
-     print("longPtArrive = ",longPtArrive)
-     print("Cap ",i," = ",(radiantToDegre(cap))%360) 
+     # print("longPt = ",longPt)
+     # print("longPtArrive = ",longPtArrive)
+     # print("latPt = ",latPt)
+     # print("latPtArrive = ",latPtArrive)
 
     
-     print("Distance orthodromique = ",distanceOrtho*6371)
-     print("")
+     
+
+print("Distance orthodromique = ",distanceOrtho*6371)
 
 
 plt.scatter(x=[listeLong], y=[listeLat], c='r', s=10)
