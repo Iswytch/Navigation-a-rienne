@@ -1,0 +1,39 @@
+Longueur du paralle : perimetre d'un cercle
+
+P = 2xPIxr
+
+Or on sait que 
+
+sin(alpha) = coté opposé / hypothénuse
+
+Donc:
+
+coté opposé = sin(alpha) x hypothénuse
+
+
+
+r = coté opposé
+
+Avec teta = 0°
+Et hypo = rayon de la terre = 6 371 000m
+
+
+P = 2xPIxsin(0)x6 371 000
+  = 0
+
+
+Avec teta = 90°
+
+sin(90)=1
+donc
+P = 40 030 174 m
+
+
+
+QUESTION 1 :
+
+Longueur du parallèle en fonction de téta comme sur le dessin vaut :
+
+	l = 2xPIxsin(téta)xr    (en km)
+
+	Avec r = 6 371

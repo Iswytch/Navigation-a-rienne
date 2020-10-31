@@ -1,0 +1,10 @@
+Le gain de distance est de :
+
+14 153 - 10 007 = 4 146km
+
+Lorsque l'on passe par le pole nord.
+
+4 146*15 = 62 190
+
+L'économie de carburant est de 62 190 l de kérosène
+

@@ -1,0 +1,29 @@
+Avec A et B de méridiens opposés et avec les valeurs donnés :
+
+φA = 0°    θA = 45°
+
+φB = 180°  θB = 45°
+
+
+En se déplacant sur le parralèle de lattitude 45°, la distance vaut la moitié de la
+longueur du parralèle de lattitude 45°
+
+Avec  c = coté opposé
+	= sin(alpha)xhypothénuse
+
+distance = (2xPIxc)/2
+	 = (2xPIxsin(téta)xr)/2
+	 = (2x3.14xsin(45)x6371)/2
+         = 3.14xsin(45)x6371
+	 = 14 153 km
+
+
+En se déplacant sur le meridien qui vaut tout le temps la meme valeur :
+
+L'angle de 45° représente le 1/4 du meridien de la Terre
+
+distance = 1/4(2*PI*c)
+	 = 10 007 km
+
+
+
