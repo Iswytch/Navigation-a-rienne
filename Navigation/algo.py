@@ -54,9 +54,9 @@ im = plt.imread("equi.jpg")
 l = 100
 latPt = 48.85
 longPt = 2.72
-latPtArrive = 40.35
-longPtArrive = -74
-estOuOuest="o"
+latPtArrive = 35.689487
+longPtArrive = 139.691706
+estOuOuest="e"
 
 distanceOrtho = 0
 i=0
@@ -72,12 +72,10 @@ longPtArrive = degreToRadiant(longPtArrive)
 
 
 
-
 # Distance loxodromique
 
 distanceLoxo = calculDistanceLoxo(latPt, longPt, latPtArrive, longPtArrive)
 print("Distance loxodromique = ",distanceLoxo)
-
 
 
 
@@ -103,8 +101,10 @@ while check:
         check=False
         
     
-     listeLat.append(512.5-((512.5*radiantToDegre(latPt))/90))
-     listeLong.append(1024+((1024*radiantToDegre(longPt))/180))
+     coordXCarte=512.5-((512.5*radiantToDegre(latPt))/90)
+     coordYCarte=1024+((1024*radiantToDegre(longPt))/180)
+     listeLat.append(coordXCarte)
+     listeLong.append(coordYCarte)
 
 
      distanceOrtho=distanceOrtho+calculDistanceOrtho(latPt, longPt, latPtSuivant, longPtSuivant)
