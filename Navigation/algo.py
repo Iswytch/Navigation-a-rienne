@@ -56,21 +56,17 @@ def estOuOuest(longPt,longPtArrive):
 im = plt.imread("equi.jpg")
 
 #Point de départ
-# latPt = float(input("Entrez la latitude du point de départ : "))
-# longPt = float(input("Entrez la longitude du point de départ : "))
+latPt = float(input("Entrez la latitude du point de départ : "))
+longPt = float(input("Entrez la longitude du point de départ : "))
 
 # #Point d'arrivé
-# latPtArrive=float(input("Entrez la latitude du point d'arrivé : "));
-# longPtArrive=float(input("Entrez la longitude du point d'arrivé : "));
+latPtArrive=float(input("Entrez la latitude du point d'arrivé : "));
+longPtArrive=float(input("Entrez la longitude du point d'arrivé : "));
 
 
 #Distance à parcourir entre les 2 points
 
 l = 100
-latPt= 40.8822860825291
-longPt= -73.71750689359394
-latPtArrive= 35.70503419924903
-longPtArrive=139.80218267578786
 distanceOrtho = 0
 i=0
 listeLat = []
@@ -88,8 +84,6 @@ longPtArrive = degreToRadiant(longPtArrive)
 # Distance loxodromique
 
 distanceLoxo = calculDistanceLoxo(latPt, longPt, latPtArrive, longPtArrive)
-print("")
-print("")
 print("Distance loxodromique = ",distanceLoxo)
 
 
@@ -124,7 +118,7 @@ while check:
      print("longPtArrive = ",(round(radiantToDegre(longPtArrive),1)))
      print("--------------------------------------------------")
            
-     if (round(latPt,1)==round(latPtArrive,1) and round(longPt,1)==round(longPtArrive,1)or i>150):
+     if (round(latPt,1)==round(latPtArrive,1) and round(longPt,1)==round(longPtArrive,1)):
         check=False
            
      i=i+1;
